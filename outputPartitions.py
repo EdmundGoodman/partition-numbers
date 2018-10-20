@@ -9,7 +9,7 @@ def f_print(x,y,d=0):
         if d==0 or i!=1:
             print("{}{}{}".format("\t"*d,i,onesString))
 
-        total += f(x-i,i,d+1)
+        total += f_print(x-i,i,d+1)
     return total
     
 def g(x):
