@@ -1,7 +1,7 @@
 import functools
 
 #https://medium.com/@nkhaja/memoization-and-decorators-with-python-32f607439f84
-d\ef memoize(func):
+def memoize(func):
     cache = func.cache = {}
 
     @functools.wraps(func)
